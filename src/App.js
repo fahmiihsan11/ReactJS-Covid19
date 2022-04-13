@@ -64,9 +64,9 @@ function App() {
           </FormControl>
         </div>
         <div className="app_stats">
-          <InfoBox title="Coranavirus Cases" cases={countryInfo.todayCases} total={countryInfo.cases}/>
-          <InfoBox title="Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered}/>
-          <InfoBox title="Deaths" cases={countryInfo.todayDeaths} total={countryInfo.deaths}/>
+          <InfoBox title="Total Cases" cases={countryInfo.todayCases} total={countryInfo.cases}/>
+          <InfoBox title="Total Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered}/>
+          <InfoBox title="Total Deaths" cases={countryInfo.todayDeaths} total={countryInfo.deaths}/>
         </div>
         <Map />
       </div>
