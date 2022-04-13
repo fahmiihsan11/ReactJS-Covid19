@@ -8,13 +8,13 @@ const InfoBox = ({ title, cases, total }) => {
                 <Typography
                     className="infoBox_title"
                     color="textSecondary">
-                    {title} typography 1
+                    {title} typography (1)
                 </Typography>
-                <h2 className="infoBox_cases">{cases} h2</h2>
+                <h2 className="infoBox_cases">{cases} (h2)</h2>
                 <Typography
                     className="infoBox_total"
                     color="secondary">
-                    {total} typography 2
+                    {total} typography (2)
                 </Typography>
             </CardContent>
         </Card>
