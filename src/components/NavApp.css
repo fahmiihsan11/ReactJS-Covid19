@@ -1,4 +1,8 @@
 .nav-content {
     text-align: center;
-    display: inline-block;
+    display: inline;
+}
+.textAbout {
+    text-decoration: none;
+    color: white;
 }
