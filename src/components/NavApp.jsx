@@ -1,15 +1,17 @@
 import React from 'react';
 import { AppBar, Typography } from '@mui/material';
-// import { makeStyles } from '@mui/styles';
-// import { Link } from 'react-router-dom';
+import './NavApp.css';
 
 const NavApp = () => {
     return (
-        <AppBar position="static" color="primary">
-            <Typography style={{flexGrow: 1}} > 
-                <h2>Home</h2>
-            </Typography>
+        <AppBar position="static" style={{background: '#32a852'}}>
+            <div className="nav-content">
+                <Typography > 
+                    <h2>Home</h2>
+                </Typography>
+            </div> 
         </AppBar>
+  
     )
 }
 

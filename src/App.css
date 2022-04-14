@@ -2,8 +2,7 @@ body{
   background-color: #f5f6fa;
 }
 .App{
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px;
 }
 .app_left {
@@ -24,4 +23,5 @@ body{
   .app{
     flex-direction: column;
   }
+
 }

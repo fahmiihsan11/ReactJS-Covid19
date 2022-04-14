@@ -1,4 +1,13 @@
 .Card-Content {
-    background-color: rgb(223, 223, 223);
-    width: 200px;
+    background-color: rgb(235, 234, 234);
+    width: 300px;
+    justify-content: space-aro;
 }
+
+@media (max-width: 990) {
+    .Card-Content {
+        /* width: 100px; */
+    }
+    
+  }
+  

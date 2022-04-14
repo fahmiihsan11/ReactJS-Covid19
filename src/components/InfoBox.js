@@ -3,7 +3,7 @@ import { Card, CardContent, Typography } from '@mui/material';
 import './InfoBox.css';
 const InfoBox = ({ title, cases, total }) => {
     return (
-        <Card className="infobox">
+        <Card className="infobox" color="primary">
             <CardContent className="Card-Content">
                 <Typography
                     className="infoBox_title"
@@ -14,7 +14,7 @@ const InfoBox = ({ title, cases, total }) => {
                 <Typography
                     className="infoBox_total"
                     color="secondary">
-                    {total} 
+                    
                 </Typography>
             </CardContent>
         </Card>
