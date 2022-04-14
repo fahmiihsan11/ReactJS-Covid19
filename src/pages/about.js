@@ -1,42 +1,23 @@
 import React from 'react';
 import { Card, CardActionArea, CardMedia, CardContent, Box, Typography, Grid } from '@mui/material/'
 import '../App.css'
-import { ClassNames } from '@emotion/react';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { IconButton } from '@mui/material';
 
 const About = () => {
     return(
-       <Box sx={{ width: 'auto'}} style={{maxwidth: 100}}>     
-               <Grid justify="center" spacing={1}>
-                    <Grid item>
-                        <Card style={{maxwidth: 200, margin: 15}}>
-                            <CardActionArea>
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        alignItem: "center",
-                                        justifyContent: "center"
-                                    }}
-                                >
-                                    <CardMedia
-                                        style={{
-                                            width: "auto",
-                                            maxxHeight: "200px"
-                                        }}
-                                        component="img"
-                                        image={require('../photo/avatar.jpg')}
-                                  />
-                                  <CardContent>
-                                    <Typography gutterBottom variant="headline" component="h2">
-
-                                    </Typography>
-                                  </CardContent>
-                                </div>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-               </Grid>
-           
-       </Box>
+        <Box class="myinfo">
+            <Box class="photo"></Box>
+            <IconButton size="large" style={{marginBottom: '5px', marginTop: '40px'}} href="https://github.com/fahmiihsan11">
+                <GitHubIcon fontSize='large' />
+            </IconButton>
+            <Typography variant='h6'style={{marginBottom: '10px'}} >
+                Development Tools : 
+            </Typography>
+            <Typography variant="h7" >
+                ReactJS & Material UI
+            </Typography>
+        </Box>     
     )
 }
 

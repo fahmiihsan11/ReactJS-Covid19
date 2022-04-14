@@ -1,35 +1,41 @@
 body{
-  background-color: #bdc6ed;
+  background-color: #d1d6ea;
 }
 .App{
   justify-content: space-between;
   padding: 20px;
+  justify-content: center;
 }
-.app_left {
+.mainSection {
   flex: 0.9;
   margin-bottom: 50px;
+  justify-content: center;
 }
-.app_header {
+.mainHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+ 
 }
 .app_stats {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 50px;
+
 }
-.app_list {
+.mainList {
   background-color: rgb(148, 106, 52);
+  justify-content: center;
 }
 .app_statsTotal {
   display: flex;
   justify-content: space-evenly;
+ 
 }
-
 .about {
   text-align: center;
+  width: 20px;
 }
 
 .card-info {
@@ -41,9 +47,42 @@ body{
   background-color: red;
 }
 
-@media (max-width: 990) {
-  .app{
-    flex-direction: column;
-  }
-
+/* About */
+.myinfo{
+  width:300px;
+  height:500px;
+  margin: auto;
+  text-align: center;
+  color: rgb(2, 2, 2);
+  margin-top: 100px;
 }
+.photo{
+  width:120px;
+  height: 120px;
+  text-align: center;
+  margin: auto;
+  line-height: 300px;
+  background-image: url(./photo/avatar.jpg);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px 1px rgb(0, 4, 0);
+}
+
+@media only screen and (max-width: 990px) {
+  .App{
+    flex-direction:column;
+  } 
+  .app_stats {
+    flex-direction: column;
+
+    
+  }
+  .app_statsTotal {
+    flex-direction: column;
+
+  }
+  .box-width{
+    width: 300px;
+  }
+ 
+ }

@@ -57,25 +57,23 @@ const Home = () => {
         })
     }
     return(
-        <>
-            <div className="App">
-                <div className="app_left">   
-                    <div className="app_header">
-                    <h2>COVID-19 Statistic</h2>
-                    <FormControl fullwidth>
-                        <InputLabel id="label"></InputLabel>
-                        <Select variant="outlined" value={country} onChange={onCountryChange}>
-                            <MenuItem value="worldwide">All Countries</MenuItem>
-                            {countries.map(country => <MenuItem value={country.value}>{country.name}</MenuItem>)}
-                        </Select>          
-                    </FormControl>
-                    </div>
-                    <Box>
-                        <div className='card-info'>
+            <Box className="App">
+                <Box className="mainSection">   
+                    <Box className="mainHeader">
+                        <h2>COVID-19 Statistic</h2>
+                        <FormControl fullwidth style={{backgroundColor: 'seaShell', borderRadius: '5px'}}>
+                            <InputLabel id="label"></InputLabel>
+                            <Select variant="outlined" value={country} onChange={onCountryChange}>
+                                <MenuItem value="worldwide">All Countries</MenuItem>
+                                {countries.map(country => <MenuItem value={country.value}>{country.name}</MenuItem>)}
+                            </Select>          
+                        </FormControl>
+                    </Box>
+                    <Box className='box-width'>
+                        <Box className='card-info'>
                             <Typography variant="h6"  >Today's Data : </Typography>
-                        </div>
-                        
-                        <div className="app_stats">
+                        </Box>
+                        <Box className="app_stats">
                             <InfoBox           
                                 title="Cases" 
                                 cases={countryInfo.todayCases} 
@@ -91,13 +89,13 @@ const Home = () => {
                                 cases={countryInfo.todayDeaths}
                                 category="red"     
                             />
-                        </div>
+                        </Box>
                     </Box>
-                    <Box>
-                        <div className='card-info'>
+                    <Box className='box-width'>
+                        <Box className='card-info'>
                             <Typography variant="h6"  >Overall Data: </Typography>
-                        </div>
-                        <div className="app_statsTotal">
+                        </Box>
+                        <Box className="app_statsTotal">
                             <InfoBoxTotal        
                                 title="Total Cases"    
                                 total={numeral(countryInfo.cases).format("0,0")}
@@ -113,10 +111,10 @@ const Home = () => {
                                 total={numeral(countryInfo.deaths).format("0,0")}
                                 category="red"
                             />
-                        </div>
+                        </Box>
                     </Box>
-                </div>
-                <div className="app_list">
+                </Box>
+                <Box className="mainList">
                     <Card style={{backgroundColor: 'antiquewhite'}}>
                     <CardContent>        
                         <Typography varian="h1" sx={{ flexGrow: 1 }} style={{fontWeight: 'bold'}}>
@@ -125,9 +123,8 @@ const Home = () => {
                         <Table countries={tableData}/>
                     </CardContent>
                     </Card>
-                </div>
-            </div>
-        </>
+                </Box>
+            </Box>
     )
 }
 
