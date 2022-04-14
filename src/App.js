@@ -1,18 +1,9 @@
 import './App.css';
 import NavApp from './components/NavApp';
-import { FormControl, MenuItem, Select, InputLabel, Card, CardContent} from '@mui/material';
-import React, { useState, useEffect } from 'react';
-import InfoBox from './components/InfoBox';
-import Table from './components/Table'
-import numeral from 'numeral';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import About from  './pages/About'
-import Home from './pages/Home'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from  './pages/About';
+import Home from './pages/Home';
 
 function App() {
   return ( 

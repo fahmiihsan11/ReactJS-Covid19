@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card, CardActionArea, CardMedia, CardContent, Box, Typography, Grid } from '@mui/material/'
-import '../App.css'
+import { Box, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { IconButton } from '@mui/material';
+import '../App.css'
 
 const About = () => {
     return(
