@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormControl, MenuItem, Select, InputLabel, Card, CardContent, Box, Typography, Grid} from '@mui/material';
+import { FormControl, MenuItem, Select, InputLabel, Card, CardContent, Box, Typography} from '@mui/material';
 import { useState, useEffect } from 'react';
 import InfoBox from '../components/InfoBox';
 import InfoBoxTotal from '../components/InfoBoxTotal';
